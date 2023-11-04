@@ -1,0 +1,443 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.h{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    padding:20px 10%;
+    justify-content:space-between;
+    display: flex;
+    background-color:transparent;
+    align-items: center;
+    z-index: 100;
+    
+}
+.logo{
+    font-size: 25px;
+    color:aliceblue;
+    text-decoration: wavy;
+    font-weight:600 ;
+}
+.navbar a {
+    font-size:18px;
+    color: aliceblue;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+}
+.navbar a:hover,.navbar a.active
+{
+    color: rgb(9, 217, 253);
+
+}
+.home{
+   display:flex;
+   align-items: center; 
+   height:1000px;
+   padding:0 10%;
+   background: url('background10.png') no-repeat;
+   background-size:cover;
+   background-position: center;
+    
+}
+.homecontent{
+    max-width:600px; 
+}
+.homecontent h1{
+    font-size: 56px;
+    font-weight: 700;
+    color:aliceblue;
+    line-height: 1.2;
+}
+.homecontent h2{
+    font-size: 40px;
+    font-weight:700;
+    color:rgb(9, 217, 253);
+
+}
+.homecontent h2 span{
+    color:rgb(9, 217, 253);  
+}
+.homecontent p{
+  font-size:20px; 
+  font-family:cursive; 
+  color:aliceblue;
+  margin:20px 0 40px;
+}
+.homecontent .btn-box{
+    display: flex;
+    justify-content:space-between;
+    width:345px;
+    height:50px;
+}
+.btn-box a {
+    position: relative;
+     display:inline-flex;
+     justify-content: center;
+     align-items: center;
+     width: 150px;
+     height: 100%;
+     background:rgb(9, 217, 253);
+     border: 2px solid rgb(9, 217,253);
+     border-radius: 8px;
+     font-size: 19px;
+     color:black;
+     text-decoration: none;
+     font-weight: 600;
+     letter-spacing: 1px;
+     z-index: 1;
+     overflow: hidden;
+     transition:.5s;
+       
+}
+.btn-box a
+{
+    background: transparent;
+    color:rgb(9, 217, 253);
+}
+.btn-box a:hover{
+   color:rgb(8, 1, 65);
+}
+
+.btn-box a::before{
+    content:'';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background:rgb(9, 217, 253);
+    z-index: -1;
+    transition:0.5s;
+}
+.btn-box a:hover::before{
+    width: 100%;
+}
+.home-icon{
+    position: absolute;
+    bottom: 0px;
+    width: 250px;
+    display:flex;
+    justify-content:space-between ;
+    top: 800px;
+}
+.home-icon a{
+    position: relative;
+     display: inline-flex;
+     justify-content:center;
+     align-items: center;
+     width: 40px;
+     height:40px;
+     background:transparent;
+     border: 3px solid rgb(9, 217, 253);
+     border-radius:50%;
+     font-size: 20px;
+     color:rgb(9, 217, 253);
+      text-decoration: none;
+      z-index: 1;
+     overflow: hidden;
+    
+
+}
+.home-icon a::before{
+    content:'';
+    position: absolute;
+    top:0;
+    left:0;
+    width:0;
+    height:100%;
+    background-color:rgb(9, 217, 253) ;
+    z-index: -1;
+}
+.home-icon a:hover::before{
+    width: 100%;
+
+}
+.home-icon a:hover{
+    color:rgb(8, 1, 65);
+}
+.about{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+    background:rgb(8, 1, 65); 
+    color: aliceblue;
+    height:450px;
+
+}
+.heading{
+    font-size:5rem;
+    text-align: center;
+}
+.about-img{
+    position: relative;
+    width: 300px;
+    height:210px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+span{
+ color:rgb(9, 217, 253);
+} 
+.about-img img{
+    width:70%;
+    height:100%;
+    border-radius:68% ;
+    border:5px solid rgb(9, 217, 253) ;
+}
+.about-content{
+    text-align:center;
+    font-weight: 700;
+    font-family: cursive;
+    font-size:25px;
+}
+.education{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: auto;
+    padding-bottom: 5rem;
+    padding:5% 0 5% 0;
+    color: aliceblue;
+    background:rgb(8, 1, 65);
+
+}
+.education .education-row{
+    display:flex;
+    flex-wrap:wrap;
+    gap: 5rem;
+} 
+.education-row .education-column{
+    flex: 1 1 40rem;
+
+}
+.education-column .title
+{
+    font-size:2.5rem;
+    margin: 0 0 1.5rem 2rem;
+    color:rgb(9, 217, 253) ;
+}
+.education-column .education-box{
+    border-left:4px solid rgb(9, 217, 253);
+    
+}
+.education-box .education-content{
+    position: relative;
+    padding-left:2rem;
+}
+.education-box .education-content::before{
+  content:'';
+  position:absolute;
+  top:0;
+  left:-1.1rem;
+  width:2rem;
+  height:2rem;
+  background: rgb(9, 217, 253);
+  border-radius: 50%; 
+}
+.education-content .content{
+    position:relative;
+    padding:1.5rem;
+    border:2px solid rgb(9, 217, 253);
+     border-radius:.6rem ;
+     margin-bottom:2rem ;
+    overflow:hidden;
+    z-index: 1;
+    
+    
+
+}
+.education-content .content::before
+{
+  content:'';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width:0;
+  height: 100%;
+  background:rgba(9, 217, 253,0.2);
+  z-index:-1;
+  transition:1s;
+
+}
+.education-content .content:hover::before{
+    width:100%;
+}
+
+.education-content .content .year{
+    font-size: 1.5 rem;
+    color:rgb(9, 217, 253);
+    padding-bottom: .5rem;
+}
+.education-content .content h3{
+    font-size: 2rem;
+}
+.skills{
+    background:rgb(8, 1, 65);
+    width:100%;
+    height:300px;
+}
+.skills .my1{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:aliceblue;
+    font-weight:400;
+    font-size:60px;
+}
+.skills h2{
+    font-size:90px;
+}
+.fle1{
+    width: 100%;
+    height:160px;
+    display: flex;
+    justify-content:space-between;
+    background-color:rgb(8, 1, 65);
+
+    
+}
+.fle1 img{
+    width:10%;
+    height:80%;
+    
+}
+.contact{
+    min-height:600px;
+    color:aliceblue;
+    background:rgb(8, 1, 65);
+}
+.contact{
+    min-height: 600px;
+    padding-bottom:7rem;
+}
+.contact form{
+    max-width: 70rem;
+    margin:0 auto;
+    text-align:center;
+
+}
+.contact form .input-box{
+   position: relative;
+   display:flex;
+   justify-content: space-between;
+   flex-wrap:wrap;
+}
+.contact form .input-box .input-field{
+    position:relative;
+    width:49%;
+    margin:.8rem 0;
+}
+
+.contact form .input-box .input-field input,
+.contact form .textarea-field textarea{
+    width: 100%;
+    height: 100%;
+    padding:1.5rem;
+    font-size: 1.6rem;
+    color:rgb(9, 217, 253);
+    border-radius:.6rem;
+    border:.2rem solid rgb(9, 217, 253);
+    background:transparent;
+    
+}
+.contact form .input-box .input-field input::placeholder,
+.contact form .textarea-field textarea::placeholder{
+ color: rgb(9, 217, 253);
+}
+.contact form .textarea-field textarea{
+    resize:none;
+}
+.contact form .bt12 button {
+    cursor: pointer;
+}
+
+.bt12 button {
+    position: relative;
+     display:inline-flex;
+     justify-content: center;
+     align-items: center;
+     width: 150px;
+     height: 100%;
+     background:rgb(9, 217, 253);
+     border: 2px solid rgb(9, 217,253);
+     border-radius: 8px;
+     font-size: 19px;
+     color:black;
+     text-decoration: none;
+     font-weight: 600;
+     letter-spacing: 1px;
+     z-index: 1;
+     overflow: hidden;
+     transition:.5s;
+       
+}
+.bt12 button
+{
+    background: transparent;
+    color:rgb(9, 217, 253);
+}
+.bt12 button:hover{
+   color:rgb(8, 1, 65);
+}
+
+.bt12 button::before{
+    content:'';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background:rgb(9, 217, 253);
+    z-index: -1;
+    transition:0.5s;
+}
+.bt12 button:hover::before{
+    width: 100%;
+}
+.project{
+    width:100%;
+    height:400px;
+    background:red;
+}
+.project .carousel-indicators{
+    position:absolute;
+    top:360px;
+}
+.project .carousel-control-next{
+    position:absolute;
+    top:200px;
+    left:auto;
+}
+.project .carousel-control-prev{
+    position:absolute;
+    top:200px;
+    left:auto;
+}
+.pro{
+    background:rgb(8, 1, 65);
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pro h2{
+    font-size:90px;
+    color: aliceblue;
+}
+.project img{
+    height:400px;
+    width: 80px;;
+}
+ 
+
+
+
